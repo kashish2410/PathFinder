@@ -1,0 +1,126 @@
+/* Contact */
+#Contact{
+  background-color: #EB9685;
+  padding: 0.625rem; 
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.contact-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.25rem 0px;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.contact-section-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 1.875rem;
+}
+
+.contact-section-left h2{
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #b33019;
+  text-align: center;
+  margin: 1.25rem;
+}
+
+.contact-section-left h3{
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.0.5rem;
+}
+
+.contact-quicklinks{
+  align-self: center;
+  margin: 1.25rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.contact-quicklinks a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.678);
+  font-weight: 500;
+  transition: transform 0.3s ease;
+  font-size: 1.25rem;
+  /* margin: 0 0.5rem; */
+}
+
+.contact-quicklinks a:hover{
+  color: #000;
+  transform: scale(1.1);
+}
+
+.contact-section-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1.875rem;
+}
+
+.email, .connect{
+  font-size: 1.4rem;
+  margin: 1.25rem;
+}
+
+.last-line h3{
+  text-align: center;
+  margin: 0.625rem;
+  padding: 0.625rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.0.5rem;
+}
+
+.connect a {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: black;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+
+}
+.connect a:hover {
+  transform: scale(1.5);
+}
+
+/* responsive */
+@media (max-width: 992px){
+    #Contact{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section-left,
+  .contact-section-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media(max-width : 767px){
+  .email,
+  .connect {
+    font-size: 1rem;
+  }
+
+  .contact-section-left h2 {
+    font-size: 1.5rem;
+  }
+}
+

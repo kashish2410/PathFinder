@@ -1,0 +1,18 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <%- include("../includes/home.ejs") %>
+    <%- include("../includes/explore.ejs") %>
+    <%- include("../includes/Quiz.ejs") %>
+   
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+</body>
+
+

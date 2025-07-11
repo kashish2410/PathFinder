@@ -1,0 +1,99 @@
+/* navbar */
+.navbar {
+  background-color: #e68b74;
+  color: white ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2.5rem;
+  box-shadow: 0 0.2rem 0.5 rgba(0, 0, 0, 0.1);
+  border-bottom: 0.01rem solid rgba(0, 0, 0, 0.395);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+
+
+.logo {
+    padding-left: 1rem;
+    font-size: 2rem;
+     font-weight: bold;
+      transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+.nav-links a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.741);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+}
+
+.nav-links a:hover{
+    color: #ffffff; 
+    transform: scale(1.15);
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* responsive */
+@media(max-width : 767px){
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #e68b74a4;
+    position: absolute;
+    top: 4rem;
+    right: 2.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    margin: 0;
+    width: 5rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+ 
+  .logo {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+}
